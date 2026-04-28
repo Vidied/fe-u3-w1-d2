@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+
 import './App.css'
 
 import MyNav from './components/MyNav'
+import MyFooter from './components/MyFooter'
+import Welcome from './components/Welcome'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
+
+  return (<div>
 <header>
   <MyNav></MyNav>
 </header>
+<main><Welcome></Welcome></main>
+<footer><MyFooter>
+  </MyFooter></footer></div>
   )
 }
 
