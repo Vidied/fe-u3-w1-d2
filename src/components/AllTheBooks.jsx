@@ -12,15 +12,17 @@ function AllTheBooks() {
             <Col xs={12} md={6} lg={3} key={libri.asin}>
               <Card className="h-100">
                 <Card.Img
-                  style={{ maxWidth: 150 }}
+                  style={{ height: "250px", objectFit: "cover" }}
                   variant="top"
                   src={libri.img}
                 />
                 <Card.Body className="d-flex flex-column justify-content-between">
-                  <Card.Title>{libri.title}</Card.Title>
+                  <Card.Title className="text-truncate">
+                    {libri.title}
+                  </Card.Title>
                   <Card.Text>
                     <div>Categoria:{libri.category}</div>
-                    <div>Prezzo:{libri.price}</div>
+                    <div>Prezzo:{libri.price}€</div>
                   </Card.Text>
                   <Button variant="primary">Compra</Button>
                 </Card.Body>
