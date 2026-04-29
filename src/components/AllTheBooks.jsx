@@ -2,6 +2,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import libriFantasy from "../assets/Libri/fantasy.json";
 import { Container, Row, Col } from "react-bootstrap";
+import fantasy from "../assets/Libri/fantasy.json";
 
 function AllTheBooks() {
   return (

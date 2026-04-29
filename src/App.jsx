@@ -5,6 +5,8 @@ import MyFooter from "./components/MyFooter";
 import Welcome from "./components/Welcome";
 import AllTheBooks from "./components/AllTheBooks";
 import { Container } from "react-bootstrap";
+import BookList from "./components/BookList";
+import fantasy from "./assets/Libri/fantasy.json";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <main>
         <Container>
           <Welcome></Welcome>
+          <BookList books={fantasy}></BookList>
           <AllTheBooks></AllTheBooks>
         </Container>
       </main>
