@@ -2,7 +2,6 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import libriFantasy from "../assets/Libri/fantasy.json";
 import { Container, Row, Col } from "react-bootstrap";
-import fantasy from "../assets/Libri/fantasy.json";
 
 function AllTheBooks() {
   return (
@@ -22,8 +21,8 @@ function AllTheBooks() {
                     {libri.title}
                   </Card.Title>
                   <Card.Text>
-                    <div>Categoria:{libri.category}</div>
-                    <div>Prezzo:{libri.price}€</div>
+                    <span>Categoria:{libri.category}</span>
+                    <span>Prezzo:{libri.price}€</span>
                   </Card.Text>
                   <Button variant="primary">Compra</Button>
                 </Card.Body>
