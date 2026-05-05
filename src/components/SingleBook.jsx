@@ -10,16 +10,19 @@ class SingleBook extends React.Component {
   render() {
     return (
       <Card
-        className="h-100"
-        style={{ border: this.state.selected ? "2px solid red" : "none" }}
-        onClick={() => {
-          this.setState({ selected: !this.state.selected });
+        className="h-100 flex-column"
+        style={{
+          border: this.state.selected ? "2px solid red" : "none",
+          minHeight: "450px",
         }}
       >
         <Card.Img
-          style={{ height: "250px", objectFit: "cover" }}
+          style={{ height: "300px", objectFit: "cover" }}
           variant="top"
           src={this.props.book.img}
+          onClick={() => {
+            this.setState({ selected: !this.state.selected });
+          }}
         />
         <Card.Body className="d-flex flex-column justify-content-between">
           <Card.Title className="text-truncate">
